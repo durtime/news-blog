@@ -1,4 +1,4 @@
-baseURL = 'https://yourusername.github.io/news-blog/'  # 稍后替换为你的GitHub用户名
+baseURL = 'https://durtime.github.io/news-blog/'
 languageCode = 'zh-CN'
 title = '每日新闻聚合'
 theme = 'paper'
@@ -14,7 +14,7 @@ theme = 'paper'
   description = "每日自动从各大新闻源收集、汇总并发布的新闻博客"
   
   # 社交链接
-  github = "https://github.com/yourusername"
+  github = "https://github.com/durtime"
   twitter = ""
   
   # 主题配置

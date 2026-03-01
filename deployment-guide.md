@@ -26,21 +26,21 @@ git add .
 # 提交
 git commit -m "初始提交：新闻聚合博客系统"
 
-# 添加远程仓库（替换yourusername为你的GitHub用户名）
-git remote add origin https://github.com/yourusername/news-blog.git
+# 添加远程仓库
+git remote add origin https://github.com/durtime/news-blog.git
 
 # 推送到GitHub
 git push -u origin main
 ```
 
 ### 步骤3：配置GitHub Pages
-1. 进入仓库页面: `https://github.com/yourusername/news-blog`
+1. 进入仓库页面: `https://github.com/durtime/news-blog`
 2. 点击"Settings" → "Pages"
 3. 在"Build and deployment"部分:
    - Source: 选择"Deploy from a branch"
    - Branch: 选择`gh-pages`，文件夹`/(root)`
 4. 点击"Save"
-5. 等待1-2分钟，访问: `https://yourusername.github.io/news-blog/`
+5. 等待1-2分钟，访问: `https://durtime.github.io/news-blog/`
 
 ## ⚙️ 本地自动化设置
 
@@ -80,7 +80,7 @@ python3 scripts/publish.py --test       # 本地测试
    ```
    记录类型: CNAME
    主机记录: www (或 @)
-   记录值: yourusername.github.io
+   记录值: durtime.github.io
    ```
 3. 在GitHub Pages设置中添加自定义域名
 
@@ -218,7 +218,7 @@ hugo version
 ## 🎯 成功指标
 
 部署完成后，你应该能够：
-- ✅ 访问 `https://yourusername.github.io/news-blog/`
+- ✅ 访问 `https://durtime.github.io/news-blog/`
 - ✅ 每天自动更新新闻内容
 - ✅ 在本地通过Cron任务自动化运行
 - ✅ 通过GitHub Actions实现云端备份自动化

@@ -50,7 +50,7 @@ python3 scripts/publish.py --test
 
 2. **推送代码到GitHub**
    ```bash
-   git remote add origin https://github.com/你的用户名/news-blog.git
+   git remote add origin https://github.com/durtime/news-blog.git
    git add .
    git commit -m "初始提交"
    git push -u origin main
@@ -62,7 +62,7 @@ python3 scripts/publish.py --test
    - 保存设置
 
 4. **访问你的网站**
-   - 等待几分钟，访问：`https://你的用户名.github.io/news-blog/`
+   - 等待几分钟，访问：`https://durtime.github.io/news-blog/`
 
 ## 项目结构
 
@@ -116,13 +116,13 @@ NEWS_SOURCES = {
 ### 修改博客配置
 编辑 `hugo.toml`：
 ```toml
-baseURL = 'https://你的用户名.github.io/news-blog/'
+baseURL = 'https://durtime.github.io/news-blog/'
 title = '你的博客标题'
 theme = 'paper'
 
 [params]
   subtitle = "你的副标题"
-  author = "你的名字"
+  name = "你的名字"
 ```
 
 ### 修改主题
@@ -182,7 +182,7 @@ MIT License
 
 如有问题，请：
 1. 查看 [常见问题](#常见问题)
-2. 提交 [Issue](https://github.com/你的用户名/news-blog/issues)
+2. 提交 [Issue](https://github.com/durtime/news-blog/issues)
 3. 查看日志文件
 
 ---
