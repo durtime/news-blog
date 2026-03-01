@@ -1,0 +1,8 @@
+# 新闻聚合博客自动化任务
+# 每天8:00和20:00（北京时间）各运行一次
+
+# 分钟 小时 日 月 星期 命令
+0 8,20 * * * cd /Users/durtimemr/.openclaw/workspace/news-blog && python3 scripts/publish.py --collect --process --build >> logs/cron.log 2>&1
+
+# 每周一早上7:00清理旧日志
+0 7 * * 1 find /Users/durtimemr/.openclaw/workspace/news-blog/logs -name "*.log" -mtime +7 -delete
