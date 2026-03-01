@@ -3,18 +3,26 @@ languageCode = 'zh-CN'
 title = '每日新闻聚合'
 theme = 'paper'
 
-# 作者信息（放在顶层，不在params中）
-author = "新闻聚合系统"
-
+# 作者信息（按照Paper主题的格式）
 [params]
+  name = "新闻聚合系统"
+  bio = "每日自动从各大新闻源收集、汇总并发布的新闻博客"
+  avatar = ""
+  
+  # 网站信息
   subtitle = "自动收集、智能汇总的每日新闻"
   description = "每日自动从各大新闻源收集、汇总并发布的新闻博客"
-  keywords = ["新闻", "聚合", "每日新闻", "自动化"]
+  
+  # 社交链接
+  github = "https://github.com/yourusername"
+  twitter = ""
   
   # 主题配置
-  homeMode = "list"  # 首页显示模式：list或post
-  github = "https://github.com/yourusername"  # 你的GitHub地址
-  twitter = ""  # 可选
+  color = "linen"
+  homeMode = "list"
+  
+  # SEO
+  keywords = ["新闻", "聚合", "每日新闻", "自动化"]
   
 [menu]
   [[menu.main]]
