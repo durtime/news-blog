@@ -8,6 +8,7 @@
 import json
 import os
 import re
+import yaml
 from datetime import datetime
 import frontmatter
 import markdown
@@ -135,8 +136,8 @@ def create_hugo_post(news_item, output_dir):
     # 确定分类
     category = categorize_news(news_item)
     
-    # 创建Front Matter
-    front_matter = {
+    # 创建Front Matter数据
+    front_matter_data = {
         'title': title,
         'date': published_date.isoformat(),
         'draft': False,
@@ -166,11 +167,7 @@ def create_hugo_post(news_item, output_dir):
     with open(filepath, 'w', encoding='utf-8') as f:
         # 写入Front Matter
         f.write('---\n')
-        for key, value in front_matter.items():
-            if isinstance(value, list):
-                f.write(f'{key}: {json.dumps(value, ensure_ascii=False)}\n')
-            else:
-                f.write(f'{key}: {value}\n')
+        yaml.dump(front_matter_data, f, allow_unicode=True, default_flow_style=False)
         f.write('---\n\n')
         # 写入内容
         f.write(content)
